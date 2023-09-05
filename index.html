@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+
+  <body>
+    <h1>
+      Weather App
+    </h1>
+    <form class="search-form">
+      <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search City Name"
+          />
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-primary mb-2">Search</button>
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-success mb-2" id="current">
+            Current Location
+          </button>
+        </div>
+      </form>
+      <hr />
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <h2 id="city">Kuala Lumpur</h2>
+              <span class="temperature">19</span
+              ><span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+              <br /><br />
+              <p id="description"></p>
+              <p>Wind Speed: <strong id="wind">1</strong> km/h</p>
+              <p>Precipitation: <strong>17</strong>%</p>
+              <p>Humidity: <strong id="humidity">50</strong>%</p>
+            </div>
+            <div class="col-3">
+              <h4 class="weather">☀️</h4>
+            </div>
+            <div class="col-4">
+              <h4>TODAY</h4>
+              <p class="date">Sat 26 Aug 2023 7:37 PM</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <p>27 Aug</p>
+              <p>SUN</p>
+              <p>☀️</p>
+              <p>29°C</p>
+            </div>
+            <div class="col-2">
+              <p>28 Aug</p>
+              <p>MON</p>
+              <p>☀️</p>
+              <p>29°C</p>
+            </div>
+            <div class="col-2">
+              <p>29 Aug</p>
+              <p>TUE</p>
+              <p>☀️</p>
+              <p>29°C</p>
+            </div>
+            <div class="col-2">
+              <p>30 Aug</p>
+              <p>WED</p>
+              <p>☀️</p>
+              <p>29°C</p>
+            </div>
+            <div class="col-2">
+              <p>31 Aug</p>
+              <p>THU</p>
+              <p>☀️</p>
+              <p>29°C</p>
+            </div>
+            <div class="col-2">
+              <p>01 Sep</p>
+              <p>FRI</p>
+              <p>☀️</p>
+              <p>29°C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
