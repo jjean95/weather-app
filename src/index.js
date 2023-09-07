@@ -30,7 +30,7 @@ function formatDate(date) {
   let currentMonth = months[date.getMonth()];
   let currentDate = date.getDate();
   let currentHours = date.getHours();
-  let currentMinutes = date.getMinutes();
+  let currentMinutes = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
   let formattedDate = `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}, ${currentHours}:${currentMinutes}`;
 
   return formattedDate;
@@ -38,6 +38,7 @@ function formatDate(date) {
 let now = new Date();
 
 let pp = document.querySelector("p.date");
+
 pp.innerHTML = formatDate(now);
 
 function displayWeatherCondition(response) {
