@@ -1,5 +1,4 @@
 body {
-  margin: 10px 300px 20px 100px;
   font-family: "Rubik", sans-serif;
 }
 h1 {
@@ -7,6 +6,12 @@ h1 {
   font-weight: 900;
   font-family: "Roboto Mono", monospace;
 }
+
+.wrapper {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
 form {
   display: block;
 }
@@ -31,5 +36,9 @@ h4 {
   font-size: 12px;
 }
 .temperature {
-  font-size: 30px;
+  font-size: 50px;
+}
+.units {
+  position: relative;
+  top: -25px;
 }
