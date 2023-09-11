@@ -38,18 +38,18 @@
     
     <form class="search-form">
       <div class="row shadow-lg p-3 mb-5 bg-white rounded">
-        <div class="col">
+        <div class="col-6">
           <input
             type="text"
             class="form-control"
             placeholder="Search City Name"
           />
         </div>
-        <div class="col">
-          <button type="submit" class="btn btn-primary mb-2">Search</button>
+        <div class="col-2">
+          <button type="submit" class="btn btn-primary mb-3">Search</button>
         </div>
         <div class="col">
-          <button type="submit" class="btn btn-success mb-2" id="current">
+          <button type="submit" class="btn btn-success mb-3" id="current">
             Current Location
           </button>
         </div>
@@ -61,14 +61,13 @@
               <h2 id="city">Kuala Lumpur</h2>
               <span class="temperature">19</span
               ><span class="units">
-                <a href="#" id="celsius-link" class="active">°C</a> |
-                <a href="#" id="fahrenheit-link">°F</a>
+                <a href="#" id="celsius-link" class="active">°C</a> 
+                <!--| <a href="#" id="fahrenheit-link">°F</a> -->
               </span>
               <br /><br />
               <ul>
               <span id="description"></span>
               <li>Wind Speed: <strong id="wind">1</strong> km/h</li>
-              <li>Precipitation: <strong>17</strong>%</li>
               <li>Humidity: <strong id="humidity">50</strong>%</li>
               </ul>
             </div>

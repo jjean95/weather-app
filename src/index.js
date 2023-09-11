@@ -89,7 +89,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
   let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiURL).then(displayForecast);
@@ -141,15 +140,15 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector(".temperature");
+//function convertToFahrenheit(event) {
+//  event.preventDefault();
+//  let temperatureElement = document.querySelector(".temperature");
 
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
+//  celsiusLink.classList.remove("active");
+//  fahrenheitLink.classList.add("active");
+//  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+//  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+//}
 
 function convertToCelsius(event) {
   event.preventDefault();
@@ -159,13 +158,13 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let celsiusTemperature = null;
+//let celsiusTemperature = null;
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
+//let fahrenheitLink = document.querySelector("#fahrenheit-link");
+//fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
+//let celsiusLink = document.querySelector("#celsius-link");
+//celsiusLink.addEventListener("click", convertToCelsius);
 
 let searchForm = document.querySelector(".search-form");
 searchForm.addEventListener("submit", handleSubmit);

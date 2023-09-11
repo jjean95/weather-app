@@ -6,6 +6,7 @@ h1 {
   font-weight: 900;
   font-family: "Roboto Mono", monospace;
   margin-top: -20px;
+  font-size: 50px;
 }
 
 .wrapper {
@@ -36,7 +37,7 @@ h4 {
   font-size: 12px;
 }
 .temperature {
-  font-size: 50px;
+  font-size: 60px;
 }
 .units {
   position: relative;
@@ -45,6 +46,7 @@ h4 {
 .active {
   color: black;
   cursor: default;
+  text-decoration: none;
 }
 .active:hover {
   text-decoration: none;
@@ -64,10 +66,25 @@ span {
 li {
   font-size: 18px;
   list-style: none;
+  opacity: 0.7;
 }
+
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+#description {
+  font-size: 30px;
+}
+.btn-primary {
+  padding: 10px 30px;
+}
+.form-control {
+  padding: 10px 30px;
+}
+.btn-success {
+  padding: 10px 10px;
+  margin-left: 10px;
 }
