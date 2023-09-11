@@ -58,7 +58,13 @@ h4 {
   font-size: 16px;
   opacity: 0.5;
 }
-
+span {
+  font-size: 18px;
+}
+li {
+  font-size: 18px;
+  list-style: none;
+}
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
