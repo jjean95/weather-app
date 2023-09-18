@@ -2,9 +2,9 @@ body {
   font-family: "Rubik", sans-serif;
 }
 h1 {
-  color: blue;
+  color: rgb(45, 44, 44);
   font-weight: 900;
-  font-family: "Roboto Mono", monospace;
+  font-family: Georgia, "Times New Roman", Times, serif, monospace;
   margin-top: -20px;
   font-size: 50px;
 }
