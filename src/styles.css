@@ -1,17 +1,25 @@
 body {
   font-family: "Rubik", sans-serif;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
 }
 h1 {
   color: rgb(45, 44, 44);
   font-weight: 900;
-  font-family: Georgia, "Times New Roman", Times, serif, monospace;
+  font-family: "Rubik", sans-serif;
   margin-top: -20px;
   font-size: 50px;
 }
 
 .wrapper {
   max-width: 700px;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 form {
@@ -26,7 +34,7 @@ h2 {
   font-weight: 700;
 }
 h4 {
-  color: blue;
+  color: rgb(191, 224, 251);
   font-weight: bolder;
 }
 #icon {
